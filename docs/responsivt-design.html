@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+		<link rel="stylesheet" type="text/css" href="css/mobil.css" />
+		<title>Webutvikling-oblig 3</title>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="photo/logo.png" alt="logo" /></a>
+			<section>
+				<h1 class="overskrift">Webutvikling-Oblig 3</h1>
+				<p>Laget av:Ihsan Tawila, 10,10,2020</p>
+				<form role="search" action="https://www.google.com"><input type="search" name="a"><input type="submit" value="search"></form>
+			</section>	
+			<ul>
+				<li><p id="top"><a href="wireframe/kjema.html"><img src="photo/log_in.png" alt="Log in" /></a><br>Sign in</p></li>
+				<li><p><a href="wireframe/comming_soon.html"><img src="photo/lang_en.png" alt="English" /></a><br>English</p></li>
+				<li><p><a href="index.html"><img src="photo/lang_no.png" alt="Norsk" /></a><br>Norsk</p></li>
+			</ul>	
+		</header>
+			
+		<nav role="navigation">
+		    <a class="home" href="index.html"><img src="photo/home.png" alt="home"/></a>
+		    <section id="myLinks">
+				<a href="html-skjema.html" >HTML-skjemaer</a>
+				<a href="mediatyper.html" >Media Typer</a>
+				<a href="css-layout.html" >CSS Layouts</a>
+				<a href="video_og_audio.html" >Video og Audio</a>
+				<a href="responsivt-design.html" >Responsivt design</a>
+				<a href="sass.html" >SASS</a>
+				<a href="seo.html" >SEO</a>
+				<a href="tilgjengelighet.html" >Tilgjengelighet</a>
+				<a href="microdata.html" >Microdata</a>
+		    </section>
+		    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<img src="photo/menu.png" alt="home"/>
+		  </a>
+		</nav>
+		
+		<aside role="complementary">
+			<h2>Ekstra artikler</h2>
+
+			<article>
+				<p>
+					<img class="media_aside" src="photo/artikel1.jpg" alt="artikel">
+					<a class="link_aside"  href="https://nettmaker.no/kunnskap/responsivt-design">Hva er responsivt design og hvorfor er det viktig?</a>
+				</p>
+
+			
+				<p>
+					<video class="media_aside" autoplay loop muted>
+						<source src="photo/resize.mp4" type="video/mp4">
+					</video>
+					<br><a class="link_aside" href="https://web.dev/responsive-web-design-basics/">Responsive web design basics</a>
+				</p>
+				
+				<p>				
+					<img  class="media_aside" src="photo/artikel3.jpg" alt="artikel"><br>
+					<a class="link_aside" href="https://www.digi.no/artikler/derfor-velger-nesten-alle-responsiv-webdesign/320517">Derfor velger nesten alle responsiv webdesign</a>
+				</p>
+				
+				<p>
+					<img  class="media_aside" src="photo/artikel4.jpg" alt="artikel"><br>
+					<a class="link_aside" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">See Learn to style HTML using<br>CSSSee CSS layout and Responsive design</a>
+				</p>
+				
+				<p >				
+					<img class="media_aside" src="photo/artikel5.jpg" alt="google logo"><br>
+					<a class="link_aside" href="https://bonefish.no/blogg/89-9-tips-for-responsivt-design">9 tips for responsivt design</a>
+				</p>
+			</article>
+
+		</aside>
+		
+		
+		<main role="main" tabindex="1">
+			<h2>Responsive design</h2>
+			<article>
+				<h3>Intro</h3>
+				<p>Responsive design er en tilnærming som brukes i nettstedsdesign og utvikling, der det responsive design har evnen til å endre 
+				seg basert på egenskapene til enheten det vises på. Responsiv design dukket opp som et resultat av mangfoldet av enheter som ble 
+				brukt til å surfe på Internett. Den tar sikte på å forbedre brukeropplevelsen i tillegg til å redusere innsatsen som brukes til å
+				utvikle nettstedet. Ettersom webutvikleren bygger en enkelt kopi av nettstedet som vises optimalt på alle enheter, noe som betyr at 
+				brukeren ikke trenger å forstørre eller redusere sideelementene. Det finnes mange måter å utforme et responsivt design nettside,  
+				hvorav noen vil nevnes i denne artikkelen.</p>
+			</article>
+			<article>
+				<h3>Flexible måleenhet</h3>								
+				<p>For flere år siden brukte nettstedsdesignere faste måleenheter som piksler eller prikker slik at elementene hadde faste mål.
+					De siste årene har nye målinger dukket opp, som er basert på prosenter. </p>
+					<figure>
+						<picture>
+							<source media="(min-width:2000px)" srcset="photo/måleenhet2000.jpg">
+							<source media="(min-width:1400px)" srcset="photo/måleenhet1200.jpg">
+							<img class="right" src="photo/måleenhet.jpg" alt="måleenheter i css"/>
+						</picture>
+						<figcaption>Noen av flexible måleenhetene i css</figcaption>
+					</figure>
+					<p>Noen av de mest brukt målinger som brukes er:</p>
+				<ul class="list">
+					<li>Em: I forhold til skriftstørrelsen til elementet (2em betyr to ganger størrelsen på den gjeldende fonten).</li>
+					<li>vw: I forhold til 1% av visningsportens bredde </li>
+					<li>vh: I forhold til 1% av visningsområdet høyden </li>
+					<li>rem: Forholdet mellom skriftstørrelse og skjermstørrelse</li>
+				</ul>				
+			</article>
+			
+			<article>
+				<h3>Media Typer</h3>
+				<p>Medietyper er forskjellige css-stilark for en nettside for flere typer enheter. når man skal designe nettside kan man bruke 
+				flere css-stilark hvor man kan velge hvilken stilark skal bruke. Vi har forklart mer om denne metoden i tidlig artikkel.</p>			
+			</article>
+			<article>
+				<h3>Media queries</h3>
+					<figure>
+						<picture>
+							<source media="(min-width:2000px)" srcset="photo/media-queries2000.jpg">
+							<source media="(min-width:1400px)" srcset="photo/media-queries1200.jpg">
+							<img class="right" src="photo/media-queries.jpg" alt="media queries i css"/>
+						</picture>
+						<figcaption>Noen av media-queries enheter</figcaption>
+					</figure>
+				<p>Media Queries er en funksjon i CSS 3 som gjør det mulig å vise innhold for å tilpasse seg forskjellige forhold, for eksempel
+				skjermoppløsninger (som skjermstørrelse på mobil og desktop). Et Media Query består av en medietype og ett eller flere uttrykk, 
+				som involverer mediefunksjoner, som løses til enten sant eller usant. Resultatet av spørringen er sant hvis medietypen som er angitt
+				i mediespørringen, samsvarer med enhetstypen dokumentet blir vist på, og alle uttrykk i mediespørringen er sanne. Når et mediespørsmål 
+				er sant, brukes tilsvarende stilark eller stilregler, i henhold til de vanlige kaskadereglene.</p>	
+
+			</article>
+			<article>
+				<h3>Hvordan media fungerer</h3>
+				<p>For at responsive media queries skal fungere, må denne være plassert øverst i &lt;head&gt;-seksjonen av HTML-filen: </p>
+				<p>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+				<ul>
+					<li>meta name="viewport" gir nettleseren instruksjoner om sidens  dimensjoner og skalering </li>
+					<li>width=device-width sier at sidens bredde skal følge enhetens  skjermbredde </li>
+					<li>initial -scale=l . Osetter zoom-nivå når siden lastes inn i nettleseren</li>
+				</ul>
+				<p>Media queries kan brukes på 2 forskjellige  måter, enten i HTML eller i CSS.</p>
+				<h4>I HTML:</h4>
+				<section class="amedias">
+					<pre class="amedia"> &lt;link rel="stylesheet" media="screen and  
+(min-device-width: 800px)" href="800.css" /&gt;
+ Den ser på størrelsen på skjermen </pre>
+					<pre class="amedia">&lt;link rel='stylesheet' media='screen and 
+(min-  width: 701px) and (max-width: 900px)' href='css/medium.css' /&gt;
+den ser på størrelsen på nettleservinduet</pre>
+				</section>
+
+				<h4>I css:</h4>
+				<section>
+					<pre>body{ 
+background-color: lightblue; 
+@media only screen and [max-width: 701px]{ 
+body{ 
+background-color: lightgreen;
+    }
+}</pre>				
+				</section>
+			</article>
+		
+		</main>
+		
+		
+		<footer>
+			<article>
+				<p class="logo" ><a href="index.html"><img src="photo/logo.png" alt="logo" /></a></p>
+				<ul>Sosial
+					<li><a href="https://www.facebook.com/hiofnorge" target="blank"><img src="photo/fbook.png" alt="facebook" /></a></li>
+					<li><a href="https://www.instagram.com/hiofnorge/" target="blank"><img src="photo/ins.png" alt="instagram" /></a></li>
+					<li><a href="https://twitter.com/hiofnorge?lang=ar" target="blank"><img src="photo/twitter.png" alt="twitter" /></a></li>										
+				</ul>
+				<ul>Kontakt
+					<li>IHSAN TAWILA</li>
+					<li><a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></li>					
+					<li>99009900</li>
+				</ul>
+				<ul>Bli med			
+					<li><a  class="registrere" href="wireframe/kjema.html">Regstire deg</a></li>
+					<li><a  class="registrere" href="wireframe/kjema.html">Bli medlem</a></li>
+					<li><a class="registrere" href="wireframe/comming_soon.html">Ledigstillenger</a></li>
+				</ul>
+				
+				<p class="logo"><a href="#top"><img src="photo/back.png" alt="back"/></a></p>
+			</article>
+
+			<p>Ihsan Jamal Tawila 	&copy; 2020. E-post: <a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></p>
+		</footer>
+		
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			</script>
+
+	
+	</body>
+
+</html>

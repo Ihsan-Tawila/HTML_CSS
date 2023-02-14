@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+		<link rel="stylesheet" type="text/css" href="css/mobil.css" />
+		<title>Webutvikling-oblig 3</title>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="photo/logo.png" alt="logo" /></a>
+			<section>
+				<h1 class="overskrift">Webutvikling-Oblig 3</h1>
+				<p>Laget av:Ihsan Tawila, 10,10,2020</p>
+				<form  role="search" action="https://www.google.com"><input type="search" name="a"><input type="submit" value="search"></form>
+			</section>	
+			<ul>
+				<li><p id="top"><a href="wireframe/kjema.html"><img src="photo/log_in.png" alt="Log in" /></a><br>Sign in</p></li>
+				<li><p><a href="wireframe/comming_soon.html"><img src="photo/lang_en.png" alt="English" /></a><br>English</p></li>
+				<li><p><a href="index.html"><img src="photo/lang_no.png" alt="Norsk" /></a><br>Norsk</p></li>
+			</ul>	
+		</header>
+			
+		<nav role="navigation">
+		    <a class="home" href="index.html"><img src="photo/home.png" alt="home"/></a>
+		    <section id="myLinks">
+				<a href="html-skjema.html" >HTML-skjemaer</a>
+				<a href="mediatyper.html" >Media Typer</a>
+				<a href="css-layout.html" >CSS Layouts</a>
+				<a href="video_og_audio.html" >Video og Audio</a>
+				<a href="responsivt-design.html" >Responsivt design</a>
+				<a href="sass.html" >SASS</a>
+				<a href="seo.html" >SEO</a>
+				<a href="tilgjengelighet.html" >Tilgjengelighet</a>
+				<a href="microdata.html" >Microdata</a>
+		    </section>
+		    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<img src="photo/menu.png" alt="home"/>
+		  </a>
+		</nav>
+		
+		<aside role="complementary">
+			<h2>Ekstra artikler</h2>
+
+			<article>
+				<p>
+					<img class="media_aside" src="photo/artikel1.jpg"alt="artikel">
+					<a class="link_aside"  href="https://nettmaker.no/kunnskap/responsivt-design">Hva er responsivt design og hvorfor er det viktig?</a>
+				</p>
+
+			
+				<p>
+					<video class="media_aside" autoplay loop muted>
+						<source src="photo/resize.mp4" type="video/mp4">
+					</video>
+					<br><a class="link_aside" href="https://web.dev/responsive-web-design-basics/">Responsive web design basics</a>
+				</p>
+				
+				<p>				
+					<img  class="media_aside" src="photo/artikel3.jpg" alt="artikel"><br>
+					<a class="link_aside" href="https://www.digi.no/artikler/derfor-velger-nesten-alle-responsiv-webdesign/320517">Derfor velger nesten alle responsiv webdesign</a>
+				</p>
+				
+				<p>
+					<img  class="media_aside" src="photo/artikel4.jpg" alt="artikel"><br>
+					<a class="link_aside" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">See Learn to style HTML using<br>CSSSee CSS layout and Responsive design</a>
+				</p>
+				
+				<p >				
+					<img class="media_aside" src="photo/artikel5.jpg" alt="google logo"><br>
+					<a class="link_aside" href="https://bonefish.no/blogg/89-9-tips-for-responsivt-design">9 tips for responsivt design</a>
+				</p>
+			</article>
+
+		</aside>
+		
+		
+		<main role="main" tabindex="1">
+			<h2>SASS</h2>
+			<article>
+				<h3>Intro</h3>
+				<p>Når du designer store og komplekse nettsteder, blir stilarkene lange,  mer komplekse og vanskelige å vedlikeholde. Derfor var det
+				nødvendig å lage et utvidelsesspråk til CSS for å gjøre css-filen mer strukturert.<br>I denne artikkelen vil vi lære om sass-språket,
+				som har tilleggsfunksjoner som ikke finnes i css, for eksempel variabler, hekk, mixins, arv og andre smarte godbiter som gjør skriving
+				av CSS mer letere.</p>
+			</article>
+			<article>
+				<h3>Hva er SASS?</h3>								
+				<p>Når du designer store og komplekse nettsteder, blir stilarkene lange,  mer komplekse og vanskelige å vedlikeholde. Derfor var det 
+				nødvendig å lage et utvidelsesspråk til CSS for å gjøre css-filen mer strukturert. I denne artikkelen vil vi lære om sass-språket,
+				som har tilleggsfunksjoner som ikke finnes i css, for eksempel variabler, hekk, mixins, arv og andre smarte godbiter som gjør skriving 
+				av CSS mer letere.</p>
+				
+				<section>
+					<h3>Nesting av selectorer </h3>
+					<p>I CSS-filen må du bruke stilregelsett på hvert element separat men i sass-filen kan du legge flere stilregelsett  inni 
+						hverandre for å kun gjelde for elementer som er omsluttet av den. For eksempel når vi vil lage en liste:</p>
+						<section class="amedias">
+
+						<pre class="amedia">************* SCSS *************
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}</pre>
+						<pre class="amedia">************ css ****************
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}</pre>
+				
+						</section>
+				</section>
+				
+				<section>
+					<h3>Variabler </h3>
+					<p>I Sass kan vi ha variabler og det er et kodenavn som vi kan  gjenbruke videre i Sass-filen. Det løster et  evigvarende
+					problem for  designere. F.eks. å huske og  gjenbruke fargekoder!  Vi kan bruke variabler til mye mer enn fargekoder. 
+					Vi kan si at variabler er som en måte å lagre informasjon vi vil bruke på nytt gjennom stilarket våre.</p>
+						<section class="amedias">
+
+						<pre class="amedia">************* SCSS *************
+$font-stack:Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+}</pre>
+						<pre class="amedia">************ css ****************
+body {
+  font:100% Helvetica, sans-serif;
+  color: #333;
+}</pre>
+				
+						</section>
+				</section>
+				<section>
+					<h3>Mixins</h3>
+					<p>Noen stilregelsetter har mange lange koder som vi må skrive hver gang vi vil bruke dem. Men i sass kan 
+					vi skrive den en gang i form av en funksjon og gi den et spesifikt navn og bruke den igjen når du trenger ved å 
+					skrive navnet til funksjonen.</p>
+						<section class="amedias">
+
+						<pre class="amedia">************* SCSS *************
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+.box{@include transform(rotate(30deg));}</pre>
+						<pre class="amedia">************ css ****************
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}</pre>
+				
+						</section>
+				</section>
+				<section>
+					<h3>Extend</h3>
+					<p>Dette er en av de mest nyttige funksjonene i Sass. Ved å bruke @extend kan du dele et sett med CSS-egenskaper
+					fra en velger til en annen. I vårt eksempel skal vi lage en enkel serie med meldinger for feil, advarsler og suksesser
+					ved hjelp av en annen funksjon som går hånd i hånd med utvidede plassholderklasser. En plassholderklasse er en spesiell
+					type klasse som bare skrives ut når den utvides, og som kan bidra til å holde den kompilerte CSS-en ren og ren.</p>
+						<section class="amedias">
+
+						<pre class="amedia">************* SCSS *************
+/* This CSS will print because %message-shared is extended. */
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+// This CSS won't print because %equal-heights is never extended.
+%equal-heights {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}</pre>
+						<pre class="amedia">************ css ****************
+/* This CSS will print because %message-shared is extended. */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}</pre>
+				
+						</section>
+				</section>
+
+
+			</article>
+		
+		</main>
+		
+		
+		<footer>
+			<article>
+				<p class="logo" ><a href="index.html"><img src="photo/logo.png" alt="logo" /></a></p>
+				<ul>Sosial
+					<li><a href="https://www.facebook.com/hiofnorge" target="blank"><img src="photo/fbook.png" alt="facebook" /></a></li>
+					<li><a href="https://www.instagram.com/hiofnorge/" target="blank"><img src="photo/ins.png" alt="instagram" /></a></li>
+					<li><a href="https://twitter.com/hiofnorge?lang=ar" target="blank"><img src="photo/twitter.png" alt="twitter" /></a></li>										
+				</ul>
+				<ul>Kontakt
+					<li>IHSAN TAWILA</li>
+					<li><a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></li>					
+					<li>99009900</li>
+				</ul>
+				<ul>Bli med			
+					<li><a  class="registrere" href="wireframe/kjema.html">Regstire deg</a></li>
+					<li><a  class="registrere" href="wireframe/kjema.html">Bli medlem</a></li>
+					<li><a class="registrere" href="wireframe/comming_soon.html">Ledigstillenger</a></li>
+				</ul>
+				
+				<p class="logo"><a href="#top"><img src="photo/back.png" alt="back"/></a></p>
+			</article>
+
+			<p>Ihsan Jamal Tawila 	&copy; 2020. E-post: <a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></p>
+		</footer>
+		
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			</script>
+
+	
+	</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+		<link rel="stylesheet" type="text/css" href="css/mobil.css" />
+		<title>Webutvikling-oblig 2</title>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="photo/logo.png" alt="logo" /></a>
+			<section>
+				<h1 class="overskrift">Webutvikling-Oblig 2</h1>
+				<p>Laget av:Ihsan Tawila, 10,10,2020</p>
+				<form role="search" action="https://www.google.com"><input type="search" name="a"><input type="submit" value="search"></form>
+			</section>	
+			<ul>
+				<li><p id="top"><a href="wireframe/kjema.html"><img src="photo/log_in.png" alt="Log in" /></a><br>Sign in</p></li>
+				<li><p><a href="wireframe/comming_soon.html"><img src="photo/lang_en.png" alt="English" /></a><br>English</p></li>
+				<li><p><a href="index.html"><img src="photo/lang_no.png" alt="Norsk" /></a><br>Norsk</p></li>
+			</ul>	
+		</header>
+		
+		
+		<nav role="navigation">
+		    <a class="home" href="index.html"><img src="photo/home.png" alt="home"/></a>
+		    <section id="myLinks">
+				<a href="html-skjema.html" >HTML-skjemaer</a>
+				<a href="mediatyper.html" >Media Typer</a>
+				<a href="css-layout.html" >CSS Layouts</a>
+				<a href="video_og_audio.html" >Video og Audio</a>
+				<a href="responsivt-design.html" >Responsivt design</a>
+				<a href="sass.html" >SASS</a>
+				<a href="seo.html" >SEO</a>
+				<a href="tilgjengelighet.html" >Tilgjengelighet</a>
+				<a href="microdata.html" >Microdata</a>
+		    </section>
+		    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<img src="photo/menu.png" alt="home"/>
+		  </a>
+		</nav>		
+		
+		
+		<aside role="complementary">
+			<h3>Relaterte artikler</h3>
+			<article>
+				<p><iframe class="media_aside"  src="https://www.youtube.com/embed/fNcJuPIZ2WE" frameborder="0" allow="accelerometer; autoplay; 
+					clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<a class="link_aside" href="https://www.youtube.com/watch?v=K74l26pE4YA"> Learn HTML Forms In 25 Minutes</a>
+				</p>
+				<p>
+					<img class="media_aside" src="photo/google.png" alt="google-search">
+					<br><a class="link_aside" href="https://www.google.com/search?q=HTML-skjemaer&oq=HTML-skjemaer&aqs=chrome.0.69i59j69i60j69i61j69i60.1049j0j4&sourceid=chrome&ie=UTF-8">HTML-skjemaer</a>
+				</p>
+			</article>
+			<h3>Andre artikler</h3>
+			<article>
+				<p>
+					<img class="media_aside" src="photo/semantiske.jpg" alt="semantiske">
+					<a class="link_aside" href="https://itstud.hiof.no/~ihsanjt/oblig1/semantikk.html" >semantiske tagene er en grupp elementer som gjør nettsidene mer organiserte. Disse elementene ...</a>
+				</p>
+
+				<p>
+					<img class="media_aside" src="photo/webserver.jpg" alt="webserver">
+					<a class="link_aside" href="https://itstud.hiof.no/~ihsanjt/oblig1/webserver.html" >En web server er en kraftig datamaskin som kjører nettsteder og som distribuerer websider etter hvert som ...</a>
+				</p>
+				<p>
+					<img class="media_aside" src="photo/annonsa.png" alt="annonsa">
+					<a class="link_aside" href="index.html" >Dersom du ønsker ekstra fokus og ekstern markedsføring av din varer med lav prise med stor rabbat klikk her</a>
+				</p>
+				<p>
+					<img class="media_aside" src="photo/annonsa0.jpg" alt="annonsa">
+					<a class="link_aside" href="index.html" >Dersom du ønsker ekstra fokus og ekstern markedsføring av din varer med lav prise med stor rabbat klikk her</a>
+				</p>
+			</article>
+		</aside>
+		
+	
+		<main role="main" tabindex="1">
+			<h2>HTML-skjemaer</h2>
+			<h3>Intro</h3>
+			<p>I denne artikkelen vil jeg dekke alt relatert til HTML-skjema, elementene som bidrar til deres opprettelse, og de forskjellige
+			felttyper som finnes i HTML5. La oss først bli kjent med HTML-skjemaet og hvordan det funger.</p>
+			<article>
+				<h3>Hva er et HTML-skjema?</h3>
+				<section>
+					<figure>
+						<picture>
+							<source media="(min-width:2000px)" srcset="photo/html_kjema_funger2000.jpg">
+							<source media="(min-width:1400px)" srcset="photo/html_kjema_funger1200.jpg">
+							<img class="right" src="photo/html_kjema_funger.png" alt="hvordan_html_skjema_fungerer"/>	
+						</picture>
+						<figcaption>Hvordan html skjema fungerer</figcaption>
+					</figure>
+
+					<p>Skjemaet består av inndatafelt, verktøy og knapper, og det autoriserer å motta brukerdata som et registreringsskjema
+					på nettsteder og applikasjoner, støttekontaktskjemaer eller lignende. Ettersom brukeren fyller ut skjemaet med data, 
+					så ved å trykke på send-knappen, går disse informasjoner til en side på et informasjonsspråk som PHP, ASP og Python på serveren 
+					for behandling. Sendes den til en annen side i databasestyringssystemet (Database) som SQL og MySQL på serveren også for lagring. 
+					Denne prosessen er avhengig av flere elementer i Html. La oss nå bli kjent med noen av elementene som brukes med å lage et HTML-skjema</p>
+					
+				</section>
+			</article>
+			
+			<article>
+				<h3>Noen elementer som brukes i Html Skjemaer:</h3>
+				<dl>
+					<dt>FORM:</dt>
+					<dd>Det er elementet som er ansvarlig for å opprette skjemaet, og alle elementene relatert til
+					skjemaet settes Innenfor det. F.eks. tekstfelt, avkrysningsbokser, radioknapper, sender knapper, etc.</dd>
+					<dt>INPUT:</dt>
+					<dd>Det er et element som settes inn i <em>form</em> -elementet, og det som definerer typen er verdiene til et attributt 
+					med navnet <em>type</em>. Det finnes mange forskjellige typer for tekstfelter, knapper, avkrysningsbokser og verktøy som 
+					opplasting og så videre. Vi kommer til å nevne noen av de i denne artikkelen senere. Det er også viktig attributt 
+					som kalles <em>name</em> der uten den utsagnet ikke vil bli sendt til serveren. </dd>
+					<dt>TEXTAREA:</dt>	
+					<dd>Et element som oppretter et stør tekstfelt på mer enn én linje, den har attributtet <em>name</em> som er ansvarlig
+					for å sende uttalelsen til serveren der dette attributtet er nødvendig. Den har odså en annen funksjon kalt <em> cols</em>,
+					som spesifiserer feltets bredde, <em>rows</em> der den angir høyden på feltet.</dd>
+					<dt>LABEL:</dt>	
+					<dd>Det muliggjør oppretting av tekst ved siden av skjemaelementene. </dd>
+					<dt>FIELDSET, LEGEND:</dt>	
+					<dd><em>fieldset</em> -elementet lager en ramme rundt elementene i skjemaet som er satt inn mellom de to kodene.
+					Når det gjelder <em>legend</em> -elementet, er det ment å lage en tittel for rammen.</dd>
+				</dl>
+				<figure class="stor-media">
+					<iframe class="iframe" src="https://www.youtube.com/embed/-sMXE7E3R3M" ></iframe>
+					<figcaption>How to create html form using html and css</figcaption>
+				</figure>
+			</article>
+			
+			<article>
+				<h3>Noen av de viktigste tekstfelt typer:</h3>
+				<section>			
+					<ul class="list">
+						<li>type="text": Viser et tekstlinjefelt for en linje</li>
+						<li>type="Tel": Definer et felt for å angi et telefonnummer</li>
+						<li>type="email": Definer et felt for en e-postadresse </li>
+						<li>type="Password":Skjuler den skrevne teksten</li>
+						<li>type="Button": Viser en klikkbar knapp</li>
+						<li>type="Date": Vis en datokontroll</li>
+						<li>type="Time": Definer en kontroll for å angi en tid </li>
+					</ul>	
+				</section>
+			
+				<section>
+					<fieldset>
+						<legend>Et eksempel på et HTML-skjema</legend>
+						<label for="fornavn">Fornavn:</label>
+						<input placeholder="f.eks: Tomas" id="fornavn" type="text" name="fornavn" required /><br>
+						<label for="etternavn">Etternavn:</label>
+						<input placeholder="F.eks: dahl" id="etternavn" type="text" name="etternavn"required /><br>
+						<label for="phone">Phone:</label>
+						<input placeholder="F.eks:12345678" id="phone" type="tel" name="phone" pattern="[0-9]{8}" required /><br>
+						<label for="email">Email:</label>
+						<input placeholder="F.eks: tomasdahl@mail.com" id="email" type="email" name="email" required /><br>
+						<label for="hobbies">Mer:</label>
+						<textarea id="hobbies" rows="8" cols="30"></textarea><br>
+					</fieldset>
+				</section>
+			</article>
+		
+		</main>
+		
+		
+		<footer>
+			<article>
+				<p class="logo" ><a href="index.html"><img src="photo/logo.png" alt="logo" /></a></p>
+				<ul>Sosial
+					<li><a href="https://www.facebook.com/hiofnorge" target="blank"><img src="photo/fbook.png" alt="facebook" /></a></li>
+					<li><a href="https://www.instagram.com/hiofnorge/" target="blank"><img src="photo/ins.png" alt="instagram" /></a></li>
+					<li><a href="https://twitter.com/hiofnorge?lang=ar" target="blank"><img src="photo/twitter.png" alt="twitter" /></a></li>										
+				</ul>
+				<ul>Kontakt
+					<li>IHSAN TAWILA</li>
+					<li><a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></li>					
+					<li>99009900</li>
+				</ul>
+				<ul>Bli med			
+					<li><a  class="registrere" href="wireframe/kjema.html">Regstire deg</a></li>
+					<li><a  class="registrere" href="wireframe/kjema.html">Bli medlem</a></li>
+					<li><a class="registrere" href="wireframe/comming_soon.html">Ledigstillenger</a></li>
+				</ul>
+				
+				<p class="logo"><a href="#top"><img src="photo/back.png" alt="back"/></a></p>
+			</article>
+
+			<p>Ihsan Jamal Tawila 	&copy; 2020. E-post: <a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></p>
+		</footer>
+	
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			</script>
+
+	
+	</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+		<link rel="stylesheet" type="text/css" href="css/mobil.css" />
+		<title>Webutvikling-oblig 3</title>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="photo/logo.png" alt="logo" /></a>
+			<section>
+				<h1 class="overskrift">Webutvikling-Oblig 3</h1>
+				<p>Laget av:Ihsan Tawila, 10,10,2020</p>
+				<form role="search" action="https://www.google.com"><input type="search" name="a"><input type="submit" value="search"></form>
+			</section>	
+			<ul>
+				<li><p id="top"><a href="wireframe/kjema.html"><img src="photo/log_in.png" alt="Log in" /></a><br>Sign in</p></li>
+				<li><p><a href="wireframe/comming_soon.html"><img src="photo/lang_en.png" alt="English" /></a><br>English</p></li>
+				<li><p><a href="index.html"><img src="photo/lang_no.png" alt="Norsk" /></a><br>Norsk</p></li>
+			</ul>	
+		</header>
+			
+		<nav role="navigation">
+		    <a class="home" href="index.html"><img src="photo/home.png" alt="home"/></a>
+		    <section id="myLinks">
+				<a href="html-skjema.html" >HTML-skjemaer</a>
+				<a href="mediatyper.html" >Media Typer</a>
+				<a href="css-layout.html" >CSS Layouts</a>
+				<a href="video_og_audio.html" >Video og Audio</a>
+				<a href="responsivt-design.html" >Responsivt design</a>
+				<a href="sass.html" >SASS</a>
+				<a href="seo.html" >SEO</a>
+				<a href="tilgjengelighet.html" >Tilgjengelighet</a>
+				<a href="microdata.html" >Microdata</a>
+		    </section>
+		    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<img src="photo/menu.png" alt="home"/>
+		  </a>
+		</nav>
+		
+		
+		<aside role="complementary">
+			<h2>Relaterte artikler</h2>
+			<article>
+				<p><iframe class="media_aside" src="https://www.youtube.com/embed/PXuDG8GmET4" frameborder="0" allow="accelerometer; 
+					autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<a class="link_aside" href="https://www.youtube.com/watch?v=PXuDG8GmET4"> Insert Audio into a Website Using HTML5</a>
+				</p>
+				
+				<p>
+					<img class="media_aside" src="photo/artikel4.jpg" alt="artikel">
+					<a class="link_aside"  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&gt;: The Video Embed element</a>
+				</p>
+				
+				<p>				
+					<img  class="media_aside" src="photo/artikel4.jpg" alt="artikel"><br>
+					<a class="link_aside" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content"> 
+					Video and audio content</a>
+				</p>
+				<p>
+					<img class="media_aside" src="photo/google.png"alt="google-search">
+					<br><a class="link_aside" href="https://www.google.com/search?q=Insert+Video+and+Audio+into+Website&oq=Insert+Video+and+Audio+into+Website&aqs=chrome..69i57j69i60j69i61.809j0j9&sourceid=chrome&ie=UTF-8">Insert Video and Audio into Website</a>
+				</p>
+				<p>
+					<img  class="media_aside" src="photo/artikel6.png" alt="artikel"><br>
+					<a class="link_aside" href="https://www.tutorialspoint.com/html5/html5_audio_video.htm">HTML5 features include native audio and video support without the need for Flash.</a>
+				</p>
+			</article>
+
+		</aside>
+		
+		<main role="main" tabindex="1">
+			<h2>Video og audio i HTML5</h2>
+			<article>
+				<h3>Intro</h3>
+				<p>I begynnelsen av 2000-tallet hadde ikke innfødte webteknologier som HTML muligheten til å bygge inn video og lyd på nettet, 
+				så proprietære teknologier som Flash (og senere, Silverlight) ble populære for håndtering av slikt innhold. Denne typen teknologi
+				fungerte ok, men den hadde noen problemer, inkludert å ikke fungere bra med HTML / CSS-funksjoner, sikkerhetsproblemer og 
+				tilgjengelighetsproblemer. Heldigvis, noen år senere, hadde HTML5-spesifikasjonen fått nye, med &lt;video&gt; og &lt;audio&lt;g -elementene,
+				og noen skinnende nye JavaScript-API-er for å kontrollere dem. I denne artikkelen vil jeg forklare hvordan du legger til video- og
+				audio-filer i HTML dokumentene dine med elementene &lt;iframe&gt;, &lt;video&gt; og &lt;audio&gt;, og de forskjellige attributtene til hver.</p>
+			</article>
+			<article>
+				<h3>Legge video</h3>												
+				<p>Det er to måter å legge til en video på en HTML-side. Enten ved å bruke et &lt;iframe&gt; eller bruke &lt;video&gt;</p>
+				
+				<section>
+					<h4>&lt;iframe&gt; elementet</h4>
+					
+					<p>Prosessen med å sette inn videoene som er i videoplattformene kalles innebygging, og for å legge inn en video i HTML-filen 
+					må du gå til videosiden på videoplattformen. <br> Under videoen finner du en Del-knapp - velg dette for å vise delingsalternativene.
+					<br>Velg Embed-knappen, så får du en &lt;iframe&gt; -kode - kopier denne og sett den inn i Inndataboks nedenfor og se hva resultatet er i Output.</p>
+					<figure>
+						<picture>
+							<img  class="iframe" src="photo/iframe1.jpg" alt="iframe element" />
+						</picture>
+						<figcaption>Hvordan iframe metode funger</figcaption>
+					</figure>
+				</section>
+				<section>
+					<h4>&lt;video&gt; elementet</h4>
+					<p>Vi kan legge til en video på en webside ved hjelp av video elementet. Innen dette elementet kan vi legge til både elementene
+					'SOURCE' og 'TRACK' i tillegg til et avsnitt av tekst som vises i tilfelle nettleseren ikke klarer å spille av videoen. Hvart 
+					element av de har  forskjellige attributter.</p>
+				
+					<p>Attributtene som gjlder til &lt;video&gt;</p>
+					<ul class="list">
+						<li>CONTROLS: Den har ansvar for utseendet på videokontroll verktøylinjen, og den tar ikke noen verdier.</li>
+						<li>WIDTH and HEIGHT: Den har kontroll på video visningsområdet</li>
+						<li>AUTOPLAY: Ansvarlig for å spille av videoen automatisk når siden lastes inn, og den tar ikke noen verdier.</li>
+						<li>LOOP: Den har ansvar for å spille videoen engang til etter at den slutter, og den tar ikke noen verdier.</li>
+						<li>MUTED: Ansvarlig for å spille av videoen uten lyd, og den tar ikke noen verdier.</li>
+						<li>POSTER: Den har ansvar for å sette inn et bilde som vises før du spiller av videoen, og den tar bildebane som et verdi</li>
+					</ul>
+					<ul class="list">attributtene som gjlder til &lt;SOURCE&gt;
+						<li>SRC: Den har ansvar for å bestemme banen til videoen som skal vises, enten det er på datamaskinen eller URL fra nette.</li>
+						<li>TYPE: Den er ansvarlig for å bestemme video type, og det settes ordet video deretter/video-type inn i verdien. Video-type er
+						fortrinnsvis en av typene(WebM / OGG / MP4)</li>
+					</ul>
+				</section>
+				<section class="amedias">
+					<section class="amedia">
+		
+						<pre>&lt;video width="300" controls 
+autoplay loop muted preload="none"&gt;
+    &lt;source src="photo/resize.mp4" type="video/mp4"&gt;
+    &lt;source src="photo/resize.ogv" type="video/ogv"&gt;
+Sorry!! Your browser doesn't support video technology
+&lt;/video&gt;</pre>
+					</section>
+					<section>
+						<p>
+						<figure>
+							<video width="300" controls autoplay loop muted preload="none">
+								<source src="photo/Insert_Video.mp4" type="video/mp4">
+								<source src="photo/Insert_Video.ogv" type="video/ogv">
+									Sorry!! Your browser doesn't support video technology
+							</video></p>						
+							<figcaption>test video</figcaption>
+						</figure>
+					</section>	
+				</section>
+
+			</article>
+			
+			<article>
+				<h3>Legge audio</h3>
+				<p>Metoden for å sette inn en audio fil er veldig lik video metoden, og dette gjøres av &lt;audio&gt; element. det har samme attributtene
+				som &lt;video&gt; har unntatt (width, height and poster) attributer. Audio-type er fortrinnsvis en av typene(wave/ OGG / MP3)</p>
+				<section class="amedias">
+						<section class="amedia">
+		
+							<pre>&lt;audio
+controls autoplay loop muted title="Startime Song"&gt;
+    &lt;source src="photo/Startime.mp3" type="audio/mpeg"&gt;
+    &lt;source src="photo/Startime.ogg" type="audio/ogg"&gt;
+Sorry!! Your browser doesn't support Audio technology
+&lt;/audio&gt;</pre>
+						</section>
+						<section>
+							<p><figure>
+								<audio controls autoplay loop muted title="Startime Song">
+									<source src="photo/song.mp3" type="audio/mpeg">
+									<source src="photo/song.ogg" type="audio/ogg">
+									Sorry!! Your browser doesn't support Audio technology
+								</audio>
+								<figcaption>test audio</figcaption>
+							</figure></p>						
+						</section>	
+					</section>
+			</article>
+		
+		</main>
+		
+		
+		<footer>
+			<article>
+				<p class="logo" ><a href="index.html"><img src="photo/logo.png" alt="logo" /></a></p>
+				<ul>Sosial
+					<li><a href="https://www.facebook.com/hiofnorge" target="blank"><img src="photo/fbook.png" alt="facebook" /></a></li>
+					<li><a href="https://www.instagram.com/hiofnorge/" target="blank"><img src="photo/ins.png" alt="instagram" /></a></li>
+					<li><a href="https://twitter.com/hiofnorge?lang=ar" target="blank"><img src="photo/twitter.png" alt="twitter" /></a></li>										
+				</ul>
+				<ul>Kontakt
+					<li>IHSAN TAWILA</li>
+					<li><a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></li>					
+					<li>99009900</li>
+				</ul>
+				<ul>Bli med			
+					<li><a  class="registrere" href="wireframe/kjema.html">Regstire deg</a></li>
+					<li><a  class="registrere" href="wireframe/kjema.html">Bli medlem</a></li>
+					<li><a class="registrere" href="wireframe/comming_soon.html">Ledigstillenger</a></li>
+				</ul>
+				
+				<p class="logo"><a href="#top"><img src="photo/back.png" alt="back"/></a></p>
+			</article>
+
+			<p>Ihsan Jamal Tawila 	&copy; 2020. E-post: <a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></p>
+		</footer>
+	
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			</script>
+
+	
+	</body>
+
+</html>

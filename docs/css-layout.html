@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+		<link rel="stylesheet" type="text/css" href="css/mobil.css" />
+		<title>Webutvikling-oblig 2</title>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="photo/logo.png" alt="logo" /></a>
+			<section>
+				<h1 class="overskrift">Webutvikling-Oblig 2</h1>
+				<p>Laget av:Ihsan Tawila, 10,10,2020</p>
+				<form role="search" action="https://www.google.com"><input type="search" name="a"><input type="submit" value="search"></form>
+			</section>	
+			<ul>
+				<li><p id="top"><a href="wireframe/kjema.html"><img src="photo/log_in.png" alt="Log in" /></a><br>Sign in</p></li>
+				<li><p><a href="wireframe/comming_soon.html"><img src="photo/lang_en.png" alt="English" /></a><br>English</p></li>
+				<li><p><a href="index.html"><img src="photo/lang_no.png" alt="Norsk" /></a><br>Norsk</p></li>
+			</ul>	
+		</header>
+		
+		<nav role="navigation">
+		    <a class="home" href="index.html"><img src="photo/home.png" alt="home"/></a>
+		    <section id="myLinks">
+				<a href="html-skjema.html" >HTML-skjemaer</a>
+				<a href="mediatyper.html" >Media Typer</a>
+				<a href="css-layout.html" >CSS Layouts</a>
+				<a href="video_og_audio.html" >Video og Audio</a>
+				<a href="responsivt-design.html" >Responsivt design</a>
+				<a href="sass.html" >SASS</a>
+				<a href="seo.html" >SEO</a>
+				<a href="tilgjengelighet.html" >Tilgjengelighet</a>
+				<a href="microdata.html" >Microdata</a>
+		    </section>
+		    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<img src="photo/menu.png" alt="home"/>
+		  </a>
+		</nav>
+
+		
+		<aside role="complementary">
+			<h2>Relaterte artikler</h2>
+			<article>
+				<p><iframe class="media_aside" src="https://www.youtube.com/embed/S0a7PEOi0do" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<a class="link_aside" href="https://www.youtube.com/watch?v=K74l26pE4YA"> Responsive Flexbox Layout Page in 4 Minutes | Flexbox Tutorial</a>
+				</p>
+				
+				<p>
+					<img class="media_aside" src="photo/layout.jpg" alt="artikel">
+					<a class="link_aside"  href="https://www.smashingmagazine.com/2018/05/guide-css-layout/">Getting Started With CSS Layout</a>
+				</p>
+
+			
+				<p>
+					<video class="media_aside" autoplay loop muted>
+						<source src="photo/resize.mp4" type="video/mp4">
+					</video>
+					<br><a class="link_aside" href="https://web.dev/responsive-web-design-basics/">Responsive web design basics</a>
+				</p>
+				
+				<p>				
+					<img  class="media_aside" src="photo/float.jpg" alt="artikel"><br>
+					<a class="link_aside" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout"> 
+					Now it's time to look at how to place your boxes in the right place in relation to the viewport, and one another...</a>
+				</p>
+				<p>
+					<img class="media_aside" src="photo/google.png" alt="google-search">
+					<br><a class="link_aside" href="https://www.google.com/search?sxsrf=ALeKk00WLNSFBDzKBL7XAeKk_IWKjjdcDQ:1602423760072&q=layouts+in+CSS&sa=X&ved=2ahUKEwj2kf7X1azsAhXfAxAIHUgdCPYQ7xYoAHoECBQQLg&biw=1366&bih=625">Layout in css</a>
+				</p>
+			</article>
+			<article>		
+				<h2>Andre artikler</h2>			
+				<p>
+					<img  class="media_aside" src="photo/artikel4.jpg" alt="artikel"><br>
+					<a class="link_aside" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">See Learn to style HTML using<br>CSSSee CSS layout and Responsive design</a>
+				</p>
+				
+				<p >				
+					<img class="media_aside" src="photo/artikel5.jpg" alt="artikel"><br>
+					<a class="link_aside" href="https://bonefish.no/blogg/89-9-tips-for-responsivt-design">9 tips for responsivt design</a>
+				</p>
+					<p>
+					<img class="media_aside" src="photo/annonsa.png" alt="annonsa">
+					<a class="link_aside" href="index.html" >Dersom du ønsker ekstra fokus og ekstern markedsføring av din varer med lav prise med stor rabbat klikk her</a>
+				</p>
+			</article>
+
+		</aside>
+		
+		<main role="main" tabindex="1">
+			<h2>Layout i css</h2>
+			<article>
+				<section>
+					<h3>Intro</h3>
+					
+					<p>I løpet av de siste årene har CSS Layout endret seg dramatisk, så vel som å gjøre vi utvikler fronten på våre nettsteder på.
+					Vi har nå et reelt valg når det gjelder layoutmetodene vi bruker i CSS for å utvikle nettstedene våre, noe som betyr at vi ofte
+					må ta et valg om hvilken tilnærming vi skal ta. I denne artikkelen vil jeg gå gjennom de forskjellige layoutmetodene du har
+					tilgjengelig for deg ved å forklare det grunnleggende om hvordan de brukes og hva de brukes til. Jeg har ikke dokumentert
+					fullstendig hver layoutmetode her, da det ville ha skapt en bok og ikke en artikkel. I stedet gir jeg en oversikt over hva som er
+					tilgjengelig for deg, med mange lenker for å finne ut mer.</p>
+					
+				</section>
+				<section>
+					<h3>Float metode </h3>
+					<figure>
+						</picture>
+							<source media="(min-width:2000px)" srcset="photo/float2000.jpg">
+							<source media="(min-width:1400px)" srcset="photo/float1200.jpg">
+							<img class="right" src="photo/float.jpg" alt="float metode"/>
+						</picture>
+						<figcaption>Hvordan float metode funger</figcaption>
+					</figure>
+						
+					<p>Den første metoden vi skal snakke om er <em>float</em>, da floats brukes til å flytte en boks til venstre eller høyre,
+					slik at innholdet kan vises pakket rundt det. For å flyte et element, bruk CSS-Property- <em>float</em> og verdien <em>left</em>
+					eller <em>right</em>. Standardverdien for float er <em>none</em>.</p>
+
+					<p>Når du har fløtt et element, vil alle de følgende elementene vikle seg rundt det flytende elementet til de vikles under. 
+					Hvis du vil forhindre det, må du fjerne flottøren. På elementet du vil begynne å vise etter flottøren, legg til eiendommen
+					<em>clear</em> med verdien <em>left</em> for å fjerne et element som flyter til venstre, <em>right</em> for å fjerne et element
+					som er flytende til høyre, eller <em>both</em> deler for å fjerne eventuelle flyter..</p>
+				</section>
+				<section>
+					<h3>position metode</h3>
+					
+					<p>For å forskyve et element fra sitt sted i normal flyt, kan du bruke posisjonsegenskapen i CSS. Posisjonsegenskapen spesifiserer
+					typen posisjoneringsmetode som brukes for et element<em>(static, relative, absolute, fixed, or sticky).</em></p>	
+					
+					<figure>
+						<picture>
+							<img class="iframe" src="photo/position.jpg" alt="position i css" />
+						</picture>
+						<figcaption>Hvordan float metode funger</figcaption>
+					</figure>
+					
+				</section>
+			</article>
+			<article>
+				<h3>Flex Layout</h3>
+				<p>Fleksibel boksoppsett <em> Flexbox </em> er en layoutmetode designet for endimensjonal layout. Endimensjonalt betyr at du 
+				ønsker å legge ut innholdet ditt på rad, eller som en kolonne. For å gjøre elementet ditt til en flex-layout, bruker
+				du <em> disaplay </em> med verdien <em> flex. </em></p>
+				
+				<p>Boksen som vi vil gjøre fleksibel, kaller vi en container, og elementene inni den kalles barna elementer. Flex-boksen
+				har egenskaper som gjelder for containeren og andre som gjelder for barna elementene.</p>
+				<h4>Elementer som legger i container</h4>
+				<section class="table">
+					<table role="table" class="flex-table">
+						<caption>Elementer som legger i container</caption>
+						<tr>
+							<th scope="col">Property</th>
+							<th scope="col">Egenskap</th>
+							<th scope="col">Hva gjør</th>
+							<th scope="col">eks.</th>
+						</tr>
+						</tr>
+						<tr>
+							<td scope="row" rowspan="4">Flex-direction</td>
+							<td>Row</td>
+							<td>Bestem retningen horisontalt fra venstre til høyre</td>
+							<td><img src="photo/flex/row.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>Row-revers</td>
+							<td>Bestem retningen horisontalt fra høyre til venstre</td>
+							<td><img src="photo/flex/row_r.jpg" alt="row_r" /></td>
+						</tr>
+						<tr>
+							<td>colume</td>
+							<td>Bestem retningen vertikalt fra topp til bunn</td>
+							<td><img src="photo/flex/colume.jpg" alt="colume" /></td>
+						</tr>
+						<tr>
+							<td>colume-rrevers</td>
+							<td>Bestem retningen vertikalt fra bunn til topp</td>
+							<td><img src="photo/flex/colume_r.jpg" alt="colume_r"/></td>
+						</tr>
+						<tr>
+							<td scope="row" rowspan="3">flex-wrap</td>
+							<td>nowrap</td>
+							<td>Alle elementene forblir på samme linje når nettleseren minimeres</td>
+							<td><img src="photo/flex/nowrap.jpg" alt="nowrap"/></td>
+						</tr>
+						<tr>
+							<td>wrap</td>
+							<td>Det siste elementet flytter til den nye linjen når nettleseren minimeres</td>
+							<td><img src="photo/flex/wrap.jpg" alt="wrap"/></td>
+						</tr>
+						<tr>
+							<td>wrap-reverse</td>
+							<td>Det første elementet flytter til den nye linjen når nettleseren er redusert i størrelse</td>
+							<td><img src="photo/flex/wrap_r.jpg" alt="wrap_r"/></td>
+						</tr>
+						<tr>
+							<td scope="row">flex-flow</td>
+							<td>row nowrap</td>
+							<td>Kombiner mellom Flex-direction og flex-wrap</td>
+							<td><img src="photo/flex/nowrap.jpg" alt="wrap_r"/></td>
+						</tr>
+						<tr>
+							<td scope="row" rowspan="6">justify-content</td>
+							<td>flex-start</td>
+							<td>Flex-barna blir plassert i begynnelsen av containeren</td>
+							<td><img src="photo/flex/row.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>flex-end</td>
+							<td>Flex-barna blir plassert til slut av containeren</td>
+							<td><img src="photo/flex/flex_end.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>center</td>
+							<td>Justere flex-barna i midten av container</td>
+							<td><img src="photo/flex/center.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>space-between</td>
+							<td>Flex-barna er plassert med mellomrom mellom linjene</td>
+							<td><img src="photo/flex/space_between.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>space-around</td>
+							<td>Flex-barna er plassert med mellomrom før, mellom og etter linjene/ x 2x 2x x</td>
+							<td><img src="photo/flex/space_around.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>space-evenly</td>
+							<td>Flex-barna er plassert med mellomrom før, mellom og etter linjene/ x x x x</td>
+							<td><img src="photo/flex/space_evenly.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td scope="row" rowspan="5">align-items</td>
+							<td>stretch</td>
+							<td>Flex-barna strekkes for å passe til container.</td>
+							<td><img src="photo/flex/a_stretch.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>flex-start</td>
+							<td>Flex-barna er plassert i begynnelsen av containeren</td>
+							<td><img src="photo/flex/a_start.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>flex-end</td>
+							<td>Flex-barna blir plassert til slut av containeren</td>
+							<td><img src="photo/flex/a_end.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>center</td>
+							<td>Flex-barna er plassert i midten av containeren</td>
+							<td><img src="photo/flex/a_center.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>baseline</td>
+							<td>Flex-barna er plassert ved containerens basislinje</td>
+							<td><img src="photo/flex/a_start.jpg" alt="row" /></td>
+						</tr>
+					</table>
+				</section>
+					<h4>Elementer som legger i barna elementene</h4>
+				<section class="table">
+					<table role="table" class="flex-table">	
+						<caption>Elementer som legger barna elementene</caption>
+						<tr>
+							<th scope="col">Property</th>
+							<th scope="col">Egenskap</th>
+							<th scope="col">Hva gjør</th>
+							<th scope="col">Eksampel</th>
+						</tr>
+						<tr>
+							<td scope="row">order</td>
+							<td>....-3 -2 -1 0 1 2 3 ....</td>
+							<td>Arrange the item in container</td>
+							<td><img src="photo/flex/a_start.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td scope="row">flex-grow</td>
+							<td>0 1 2 3 ....</td>
+							<td>Vekstrate av elementets i forhold til resten av elementene når størrelsen endres</td>
+							<td><img src="photo/flex/a_start.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td scope="row">flex-shrink</td>
+							<td>0 1 2 3 ....</td>
+							<td>Avtagende av elementets i forhold til resten av elementene når størrelsen endres</td>
+							<td><img src="photo/flex/a_start.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td scope="row">flex-basis</td>
+							<td>auto  200px  30% </td>
+							<td>Kontroller størrelsen på elementet inne i containeren</td>
+							<td><img src="photo/flex/a_start.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td scope="row">flex</td>
+							<td>1 1 50%</td>
+							<td>grow, shrink og basis slår sammen</td>
+							<td><img src="photo/flex/a_start.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td  scope="row" rowspan="6">align-self</td>
+							<td>auto</td>
+							<td>Elementet arver sin overordnede container align-items-egenskap, eller "strekk" hvis den ikke har noen overordnet container</td>
+							<td><img src="photo/flex/s_auto.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>stretch</td>
+							<td>Elementet er plassert slik at det passer til containeren</td>
+							<td><img src="photo/flex/s_stretch.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>flex-start</td>
+							<td>Elementet er plassert i begynnelsen av containeren</td>
+							<td><img src="photo/flex/s_start.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>flex-end</td>
+							<td>Elementet er plassert ved enden av containeren</td>
+							<td><img src="photo/flex/s_end.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>center</td>
+							<td>Elementet er plassert i midten av containeren</td>
+							<td><img src="photo/flex/s_center.jpg" alt="row" /></td>
+						</tr>
+						<tr>
+							<td>baseline</td>
+							<td>Elementet er plassert ved basislinjen til containeren</td>
+							<td><img src="photo/flex/s_start.jpg" alt="row" /></td>
+						</tr>
+					</table>
+				</section>
+			</article>
+			<h3>Grid Layout</h3>
+			<article class="aa">
+				<section class="a1">
+				<h4>1</h4>
+				<p>CSS Grid Layout ble designet som en todimensjonal layoutmetode. To-dimensjonal betyr at du ønsker å 
+				legge innholdet ditt i rader og kolonner. </p>
+				</section>
+				<section class="a2">
+				<h4>2</h4>
+				<p>Som med Flexbox, er Grid Layout en verdi for <em> display </em>, og for å begynne å bruke 
+				Grid bør du starte med <em> display: grid </em> på beholderen din, og deretter sette opp noen kolonner og / eller rader ved hjelp av
+				<em> grid-template-columns </em> og <em> grid-template-rows.</em></</p>
+				</section>
+				<section class="a3">
+				<h4>3</h4>
+				<p>Grid Container er elementet du har angitt <em>.  display: grid </em> på. Du har deretter grid linjer, opprettet av kolonne- og 
+				radsporene du har angitt når du bruker <em> grid-template-columns </em> og <em> grid-template-rows </em>.</p>
+				</section>
+				<section class="a4">
+				<h4>4</h4>
+				<p>Den minste enheten på grid (mellom fire kryssende linjer) er kjent som en grid celle, mens en samling grid celler som utgjør et komplett rektangel kalles et Grid 
+				Cells. Så snart du oppretter et grid, begynner de direkte barna til nettbeholderen å legge seg ut, en i hver celle i grid-en.</p>
+				</section>
+				<section class="a5">
+				<h4>5</h4>
+				<p>De gjør dette i henhold til reglene for automatisk plassering av grid-en. Disse reglene sikrer at hvert element plasseres i en tom celle,
+				og unngår overlappende elementer.</p>
+				</section>
+			</article>
+		</main>
+		
+		
+		<footer>
+			<article>
+				<p class="logo" ><a href="index.html"><img src="photo/logo.png" alt="logo" /></a></p>
+				<ul>Sosial
+					<li><a href="https://www.facebook.com/hiofnorge" target="blank"><img src="photo/fbook.png" alt="facebook" /></a></li>
+					<li><a href="https://www.instagram.com/hiofnorge/" target="blank"><img src="photo/ins.png" alt="instagram" /></a></li>
+					<li><a href="https://twitter.com/hiofnorge?lang=ar" target="blank"><img src="photo/twitter.png" alt="twitter" /></a></li>										
+				</ul>
+				<ul>Kontakt
+					<li>IHSAN TAWILA</li>
+					<li><a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></li>					
+					<li>99009900</li>
+				</ul>
+				<ul>Bli med			
+					<li><a  class="registrere" href="wireframe/kjema.html">Regstire deg</a></li>
+					<li><a  class="registrere" href="wireframe/kjema.html">Bli medlem</a></li>
+					<li><a class="registrere" href="wireframe/comming_soon.html">Ledigstillenger</a></li>
+				</ul>
+				
+				<p class="logo"><a href="#top"><img src="photo/back.png" alt="back"/></a></p>
+			</article>
+
+			<p>Ihsan Jamal Tawila 	&copy; 2020. E-post: <a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></p>
+		</footer>
+	
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			</script>
+
+	
+	</body>
+
+</html>

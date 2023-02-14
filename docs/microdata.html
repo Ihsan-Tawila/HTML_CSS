@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+		<link rel="stylesheet" type="text/css" href="css/mobil.css" />
+		<title>Webutvikling-oblig 3</title>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="photo/logo.png" alt="logo" /></a>
+			<section>
+				<h1 class="overskrift">Webutvikling-Oblig 4</h1>
+				<p>Laget av:Ihsan Tawila, 10,10,2020</p>
+				<form role="search" action="https://www.google.com"><input type="search" name="a"><input type="submit" value="search"></form>
+			</section>	
+			<ul>
+				<li><p id="top"><a href="wireframe/kjema.html"><img src="photo/log_in.png" alt="Log in" /></a><br>Sign in</p></li>
+				<li><p><a href="wireframe/comming_soon.html"><img src="photo/lang_en.png" alt="English" /></a><br>English</p></li>
+				<li><p><a href="index.html"><img src="photo/lang_no.png" alt="Norsk" /></a><br>Norsk</p></li>
+			</ul>	
+		</header>
+			
+		<nav role="navigation">
+		    <a class="home" href="index.html"><img src="photo/home.png" alt="home"/></a>
+		    <section id="myLinks">
+				<a href="html-skjema.html" >HTML-skjemaer</a>
+				<a href="mediatyper.html" >Media Typer</a>
+				<a href="css-layout.html" >CSS Layouts</a>
+				<a href="video_og_audio.html" >Video og Audio</a>
+				<a href="responsivt-design.html" >Responsivt design</a>
+				<a href="sass.html" >SASS</a>
+				<a href="seo.html" >SEO</a>
+				<a href="tilgjengelighet.html" >Tilgjengelighet</a>
+				<a href="microdata.html" >Microdata</a>
+		    </section>
+		    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<img src="photo/menu.png" alt="home"/>
+		  </a>
+		</nav>
+		
+		
+		<aside role="complementary">
+			<h2>Relaterte artikler</h2>
+			<article>				
+				<p>
+					<img class="media_aside" src="photo/brad-pitt.jpg" alt="artikel">
+					<a class="link_aside"  href="wireframe/brad-pitt.html">Brad Pitt er en amerikansk skuespiller, 
+					stemmeskuespiller, filmprodusent, filmskaper og TV-produsent.</a>
+				</p>
+				
+				<p>				
+					<img  class="media_aside" src="photo/angelina.jpg" alt="artikel"><br>
+					<a class="link_aside" href="wireframe/angelina.html"> 
+					Angelina Jolie er en amerikansk skuespiller, filmskaper. Hun ble født i Los Angeles, USA, 4. juni 1975.</a>
+				</p>
+				<p>
+					<img class="media_aside" src="photo/smith.png" alt="artikel">
+					<br><a class="link_aside" href="wireframe/smith.html">Mr. and Mrs. Smith er en amerikansk actionkomediefilm 
+					regissert av Doug Liman og skrevet av Simon Kinberg.</a>
+				</p>
+				<p>
+					<img  class="media_aside" src="photo/logo.png" alt="artikel"><br>
+					<a class="link_aside" href="wireframe/job.html">Vi i I.J.T-WEB leter etter deg som har erfaring innen webdesign. 
+					Dette er en spennende mulighet for deg som ønsker å videreutvikle deg.</a>
+				</p>
+				<p>
+					<img  class="media_aside" src="photo/hiof.jpg" alt="artikel"><br>
+					<a class="link_aside" href="wireframe/hiof.html">Høgskolen i Østfold (HiØ) er en statlig høgskole i Norge, 
+					som ble etablert 1. august 1994.</a>
+				</p>|	
+			</article>
+
+		</aside>
+		
+		<main role="main" tabindex="1">
+			<h2>Microdata</h2>
+			<article>
+				<h3>Intro</h3>
+				<p>Noen ganger er det ønskelig å kommentere innhold med spesifikke maskinlesbare etiketter, f.eks. å tillate generiske skript å tilby tjenester som er 
+				tilpasset siden, eller å gjøre det mulig å behandle innhold fra en rekke samarbeidende forfattere av et enkelt skript på en konsekvent måte.. Det finnes
+				en rekke alternative markup måter RDFa, Microdata og JSON-LD. Idenne artiklen skal jeg forklare om Microdata.</p>
+			</article>
+			<article>
+				<h3>Hva er Microdata</h3>
+				<p>Mikrodata gjør det mulig å legge til nestede grupper med navneverdipar i dokumenter, parallelt med det eksisterende innholdet. Det øker semantikk i 
+				data og gjør dataen lesbar av andre maskiner. Det kan også gjør om internett til en stor database. Det avhenger hovedsakelig av datastrukturen.</p>
+			</article>
+			<article>
+				<h3>Datastrukturen</h3>												
+				<p>Strukturell data er en mate å merke informasjon med ennå mer semantisk verdi. Beskriver hva innholdet ER til andre maskiner, søkemotorer, 
+				sosiale medier Dette kommer da i tillegg til eksisterende semantiske elementer som article, aside osv. . Og det hjelper med universell utforming, 
+				maskinlesbarhet og mye annet. Strukturell data hjelper også med SEO.</p>
+			</article>	
+			
+			
+			<article>
+				<h3>Hvordan skiver vi microdata ? </h3>		
+				<p>Microdata leggestil vedå bnuke attributter på HTML elementene. </p>
+				<ul>
+					<li>Itemscope : "Modertaggen" </li>
+					<li>Itemtype : Link til vokabular </li>
+					<li>Itemid :Unikid </li>
+					<li>Itemprop : Hva beskriver dennetaggen </li>
+					<li>Itemtef : Kan referere til en itemid i en annen scope </li>
+				</ul>
+			</article>
+			<h3>Eksempelsider </h3>
+			<section>
+				<figure>
+						<img class="right" src="photo/job-test.jpg" alt="job-test"/>
+						<figcaption>Eksempelsida om job-annonsa</figcaption>
+					</figure>
+			</section>
+			<section>
+				<figure>
+						<img class="right" src="photo/hiof-test.jpg" alt="hiof-test"/>
+						<figcaption>Eksempelsida om universitete</figcaption>
+					</figure>
+			</section>
+			<section>
+				<figure>
+						<img class="right" src="photo/smith-test.jpg" alt="smith-test"/>
+						<figcaption>Eksempelsida om film</figcaption>
+					</figure>
+			</section>
+			<section>
+				<figure>
+						<img class="right" src="photo/brad-test.jpg" alt="brad-test"/>
+						<figcaption>Eksempelsida om Brad Pitt</figcaption>
+					</figure>
+			</section>
+			<section>
+				<figure>
+						<img class="right" src="photo/angelina-test.jpg" alt="angelina-test"/>
+						<figcaption>Eksempelsida om Angelina Juli</figcaption>
+					</figure>
+			</section>
+			
+			
+		</main>
+		
+		
+		<footer>
+			<article>
+				<p class="logo" ><a href="index.html"><img src="photo/logo.png" alt="logo" /></a></p>
+				<ul>Sosial
+					<li><a href="https://www.facebook.com/hiofnorge" target="blank"><img src="photo/fbook.png" alt="facebook" /></a></li>
+					<li><a href="https://www.instagram.com/hiofnorge/" target="blank"><img src="photo/ins.png" alt="instagram" /></a></li>
+					<li><a href="https://twitter.com/hiofnorge?lang=ar" target="blank"><img src="photo/twitter.png" alt="twitter" /></a></li>										
+				</ul>
+				<ul>Kontakt
+					<li>IHSAN TAWILA</li>
+					<li><a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></li>					
+					<li>99009900</li>
+				</ul>
+				<ul>Bli med			
+					<li><a  class="registrere" href="wireframe/kjema.html">Regstire deg</a></li>
+					<li><a  class="registrere" href="wireframe/kjema.html">Bli medlem</a></li>
+					<li><a class="registrere" href="wireframe/comming_soon.html">Ledigstillenger</a></li>
+				</ul>
+				
+				<p class="logo"><a href="#top"><img src="photo/back.png" alt="back"/></a></p>
+			</article>
+
+			<p>Ihsan Jamal Tawila 	&copy; 2020. E-post: <a class="registrere" href="mailto:ehsan2ila91@gmail.com">ehsan2ila91@gmail.com</a></p>
+		</footer>
+	
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			</script>
+
+	
+	</body>
+
+</html>

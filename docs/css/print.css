@@ -1,0 +1,22 @@
+body{
+	grid-template-areas: "header header header"
+						 "nav  nav nav"
+						 "main main main"
+						 "main main main"
+						 "footer footer footer";
+}
+header{	display:none;}
+nav{display:none;}
+aside{display:none;}
+a{text-decoration: none;}	
+main{box-shadow:none; font-size:14px}
+.annonser{display:none;	}
+figure{float:none; width:250px;}
+iframe{display:none;}
+main article{display:block;}
+hr{display:none;}
+footer{display:none;}
+.right{box-shadow:none;}
+.iframe{width:400px; height:250px;}
+ p, img, h2, h3, h4{page-break-inside: avoid;}
+pre{color:black; font-size:14px}
